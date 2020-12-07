@@ -10,6 +10,15 @@ function Night() {
       window.requestAnimationFrame = requestAnimationFrame;
   })();
 
+    // append to the back div
+    var back = document.getElementById("background")
+
+    while (back.lastElementChild.id !== "bgCanvas") {
+        back.removeChild(back.lastElementChild);
+      }
+    // clear out the canvas when changing themes
+
+
   // Terrain stuff.
   var background = document.getElementById("bgCanvas"),
       bgCtx = background.getContext("2d"),
@@ -53,7 +62,7 @@ function Night() {
           displacement *= 0.6;
       }
 
-      document.body.appendChild(this.terrain);
+      back.appendChild(this.terrain)
   }
 
   Terrain.prototype.update = function () {

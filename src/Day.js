@@ -13,6 +13,25 @@ function Day() {
   // append to the back div
   var back = document.getElementById("background")
 
+  // Remove everything from back div
+  while (back.lastElementChild.id !== "bgCanvas") {
+    back.removeChild(back.lastElementChild);
+  }
+
+    // add birds to background
+    let birds = ["one", "two", "three", "four"];
+    for (let v = 0; v < birds.length; v++) {
+        let newBird = document.createElement("div");
+        newBird.className = `bird-container bird-container--${birds[v]}`
+
+        let newBirdInner = document.createElement("div");
+        newBirdInner.className = `bird bird--${birds[v]}`
+
+        newBird.appendChild(newBirdInner);
+        back.appendChild(newBird);
+    }
+
+
   // Terrain stuff.
   var background = document.getElementById("bgCanvas"),
       bgCtx = background.getContext("2d"),
