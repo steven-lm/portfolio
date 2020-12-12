@@ -13,6 +13,9 @@ function Night() {
     // append to the back div
     var back = document.getElementById("background")
 
+    let app = document.getElementsByClassName("App")[0];
+    app.style.background = "#0A0A05";
+
     while (back.lastElementChild.id !== "bgCanvas") {
         back.removeChild(back.lastElementChild);
       }

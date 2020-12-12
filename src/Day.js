@@ -13,6 +13,9 @@ function Day() {
   // append to the back div
   var back = document.getElementById("background")
 
+  let app = document.getElementsByClassName("App")[0];
+  app.style.background = "#272744";
+
   // Remove everything from back div
   while (back.lastElementChild.id !== "bgCanvas") {
     back.removeChild(back.lastElementChild);
@@ -77,7 +80,7 @@ function Day() {
 
       back.appendChild(this.terrain)
   }
-
+ 
   Terrain.prototype.update = function () {
       // draw the terrain
       this.terCtx.clearRect(0, 0, width, height);
@@ -106,7 +109,7 @@ function Day() {
 
   var entities = [];
 
-  entities.push(new Terrain({mHeight : (height/2)-120}));
+  entities.push(new Terrain({mHeight : (height/2)-140}));
   entities.push(new Terrain({displacement : 120, scrollDelay : 50, fillStyle : "#8B6E9D", mHeight : (height/2)-60}));
   entities.push(new Terrain({displacement : 190, scrollDelay : 30, fillStyle : "#494E7F", mHeight : height/2}));
   entities.push(new Terrain({displacement : 250, scrollDelay : 20, fillStyle : "#272744", mHeight : height/1.9}));
@@ -130,6 +133,7 @@ function Day() {
       while (entLen--) {
           entities[entLen].update();
       }
+
       requestAnimationFrame(animate);
   }
   animate();

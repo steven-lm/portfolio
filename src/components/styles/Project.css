@@ -1,0 +1,22 @@
+.my-projects {
+    width: 180px;
+    background: transparent;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+
+.uni-projects {
+    width: 180px;
+    background: transparent;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+
+.active {
+    background: rgb(211, 211, 211);
+    border-bottom: 1px solid gray;
+}

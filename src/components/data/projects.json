@@ -1,0 +1,37 @@
+{
+    "myProjects": [
+        {
+            "name": "Personal website",
+            "label": "Frontend",
+            "description": "The site you're on right now!",
+            "stack": ["Reactjs", "Javascript"],
+            "img": ""
+        },
+        {
+            "name": "Censor",
+            "label": "Webapp",
+            "description": "A webapp which uses Microsoft Cognotive services to blur out faces in user uploaded photos",
+            "stack": ["Python", "HTML/CSS"]
+        }
+    ],
+    "uniProjects": [
+        {
+            "name": "Big Brain",
+            "label": "Frontend",
+            "description": "Collaborated in a team of 2 to develop a front end for a quiz game website",
+            "stack": ["Reactjs", "Javascript"]
+        },
+        {
+            "name": "QuickPic",
+            "label": "Frontend",
+            "description": "Made a replica of instagram in pure vanilla javascript",
+            "stack": ["Javascript"]
+        },      
+        {
+            "name": "UNSW Slackr",
+            "label": "Backend",
+            "description": "Collaborated in a team of 4 to develop a backend for an instant messaging platform",
+            "stack": ["Python", "Flask"]
+        }       
+    ]
+}
