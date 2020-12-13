@@ -13,7 +13,7 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import SchoolIcon from "@material-ui/icons/School";
 import ComputerIcon from "@material-ui/icons/Computer";
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from "react-animate-on-scroll";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   darkTypography: {
-    color: "#808080"
+    color: "#808080",
   },
 
   secondaryTail: {
@@ -54,13 +54,13 @@ const Container = styled.div`
       color: #d3d3d3;
     `}
 
-    @media (max-width: ${TABLET_SIZE}${"px"}) {
+  @media (max-width: ${TABLET_SIZE}${"px"}) {
     height: 850px;
-    }
+  }
 
-    @media (max-width: ${MOBILE_SIZE}${"px"}) {
-      height: 1000px;
-      }
+  @media (max-width: ${MOBILE_SIZE}${"px"}) {
+    height: 1000px;
+  }
 `;
 
 const Title = styled.div`
@@ -97,9 +97,6 @@ const AboutMain = styled.div`
     width: 95%;
   }
 
-  @media (max-width: ${MOBILE_SIZE}${"px"}) {
-    width: 100%;
-  }
 `;
 
 const Summary = styled.div`
@@ -110,7 +107,6 @@ const Summary = styled.div`
   text-align: left;
 
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
-    margin-bottom: 40px;
     width: 80%;
   }
 
@@ -119,7 +115,9 @@ const Summary = styled.div`
   }
 
   @media (max-width: ${TABLET_SIZE}${"px"}) {
+    margin-bottom: 40px;
     width: 85%;
+    text-align: center;
   }
 `;
 
@@ -131,15 +129,15 @@ const TimelineContainer = styled.div`
   svg {
     color: grey;
   }
-  
+
   .timeline-title {
     margin-bottom: 15px;
     font-size: 2rem;
-    color: ${props => props.dark ? "gray" : "#808080"};
+    color: ${(props) => (props.dark ? "gray" : "#808080")};
   }
 
   h1 {
-    color: ${props => props.dark ? "#BEBEBE" : "black"};
+    color: ${(props) => (props.dark ? "#BEBEBE" : "black")};
   }
 
   .timeline-content {
@@ -148,7 +146,8 @@ const TimelineContainer = styled.div`
 
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
     width: 100%;
-
+    
+  
     .timeline-content {
       position: relative;
       left: -60px;
@@ -156,11 +155,9 @@ const TimelineContainer = styled.div`
     }
   }
 
-  
   @media (max-width: ${TABLET_SIZE}${"px"}) {
     width: 85%;
   }
-
 `;
 
 const About = ({ theme }) => {
@@ -170,62 +167,94 @@ const About = ({ theme }) => {
     <Container dark={theme === "dark"}>
       <Title>About</Title>
       <AboutMain dark={theme === "dark"}>
-        <Summary>
-          <div>
-            Hello! I'm currently a full time student studying computer science
-            at UNSW. I'm always looking for a challenge and enjoy exploring new
-            areas of work.
-          </div>
-          <div className="connect-text">Connect with me!</div>
-          <Socials theme={theme}></Socials>
-        </Summary>
+          <Summary>
+          <ScrollAnimation
+          className="project-anim"
+          initiallyVisible={true}
+          animateIn="fadeInLeft"
+          animateOnce={true}
+          duration={1}
+        >
+            <div>
+              Hello! I'm currently a full time student studying computer science
+              at UNSW. I'm always looking for a challenge and enjoy exploring
+              new areas of work.
+            </div>
+            <div className="connect-text">Connect with me!</div>
+            <Socials align="center" theme={theme}></Socials>
+            </ScrollAnimation>
+          </Summary>
         <TimelineContainer dark={theme === "dark"}>
+        <ScrollAnimation
+          className="project-anim"
+          initiallyVisible={true}
+          animateIn="fadeInRight"
+          animateOnce={true}
+          duration={1}
+        >
           <div className="timeline-title">Education</div>
           <div className="timeline-content">
-          <Timeline align="left">
-            <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography variant="body2" className={theme === "dark" ? classes.darkTypography : null}>
-                  2019 - Present
-                </Typography>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot variant="outlined" color="grey">
-                  <ComputerIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <Paper elevation={3} className={theme === "dark" ? classes.darkPaper : classes.paper}>
-                  <Typography variant="h6" component="h1">
-                    B. Computer Science
+            <Timeline align="left">
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography
+                    variant="body2"
+                    className={theme === "dark" ? classes.darkTypography : null}
+                  >
+                    2019 - Present
                   </Typography>
-                  <Typography>UNSW</Typography>
-                </Paper>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography variant="body2" className={theme === "dark" ? classes.darkTypography : null}>
-                  2012 - 2018
-                </Typography>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot variant="outlined" color="grey">
-                  <SchoolIcon />
-                </TimelineDot>
-              </TimelineSeparator>
-              <TimelineContent>
-                <Paper elevation={3} className={theme === "dark" ? classes.darkPaper : classes.paper}>
-                  <Typography variant="h6" component="h1">
-                    HSC
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="grey">
+                    <ComputerIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper
+                    elevation={3}
+                    className={
+                      theme === "dark" ? classes.darkPaper : classes.paper
+                    }
+                  >
+                    <Typography variant="h6" component="h1">
+                      B. Computer Science
+                    </Typography>
+                    <Typography>UNSW</Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography
+                    variant="body2"
+                    className={theme === "dark" ? classes.darkTypography : null}
+                  >
+                    2012 - 2018
                   </Typography>
-                  <Typography>Canley Vale High School</Typography>
-                </Paper>
-              </TimelineContent>
-            </TimelineItem>
-          </Timeline>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="grey">
+                    <SchoolIcon />
+                  </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper
+                    elevation={3}
+                    className={
+                      theme === "dark" ? classes.darkPaper : classes.paper
+                    }
+                  >
+                    <Typography variant="h6" component="h1">
+                      HSC
+                    </Typography>
+                    <Typography>Canley Vale High School</Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
           </div>
+          </ScrollAnimation>
         </TimelineContainer>
       </AboutMain>
     </Container>

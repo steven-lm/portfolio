@@ -5,33 +5,59 @@
             "label": "Frontend",
             "description": "The site you're on right now!",
             "stack": ["Reactjs", "Javascript"],
-            "img": ""
+            "img": "personal.JPG",
+            "github": "https://github.com/steven-lm/portfolio",
+            "link": "https://steven-lm.github.io/portfolio/"
+        },
+        {
+            "name": "Genre Classifier",
+            "label": "Machine Learning",
+            "description": "Trained models to accurately classify multiple book genres using its summary",
+            "stack": ["Python", "Keras", "SKLearn", "NLTK"],
+            "github": "https://github.com/steven-lm/Genre-Classifier",
+            "img": "genre-classifier.JPG"
         },
         {
             "name": "Censor",
             "label": "Webapp",
-            "description": "A webapp which uses Microsoft Cognotive services to blur out faces in user uploaded photos",
-            "stack": ["Python", "HTML/CSS"]
+            "description": "Used Microsoft Cognotive services to blur out faces in user uploaded photos",
+            "stack": ["Python", "HTML/CSS"],
+            "github": "https://github.com/steven-lm/Censor",
+            "img": "censor.jpg"
+        },
+        {
+            "name": "COVID Tracker",
+            "label": "IoT Script",
+            "description": "Monitor COVID-19 trends by web scrapping and processing data with Azure",
+            "stack": ["Python", "Azure Services"],
+            "github": "https://github.com/steven-lm/Azure-IoT",
+            "img": "iot.JPG"
         }
+
     ],
     "uniProjects": [
         {
             "name": "Big Brain",
             "label": "Frontend",
             "description": "Collaborated in a team of 2 to develop a front end for a quiz game website",
-            "stack": ["Reactjs", "Javascript"]
+            "stack": ["Reactjs", "Javascript"],
+            "img": "bigbrain.JPG"
         },
         {
             "name": "QuickPic",
             "label": "Frontend",
             "description": "Made a replica of instagram in pure vanilla javascript",
-            "stack": ["Javascript"]
+            "stack": ["Javascript"],
+            "github": "https://github.com/steven-lm/Quickpic",
+            "img": "quickpic.JPG"
         },      
         {
             "name": "UNSW Slackr",
             "label": "Backend",
             "description": "Collaborated in a team of 4 to develop a backend for an instant messaging platform",
-            "stack": ["Python", "Flask"]
+            "stack": ["Python", "Flask"],
+            "github": "https://github.com/steven-lm/UNSW-Slack",
+            "img": "slack.JPG"
         }       
     ]
 }

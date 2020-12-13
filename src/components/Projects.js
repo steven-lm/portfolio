@@ -49,11 +49,16 @@ const ProjectsMain = styled.div`
 `;
 
 const ProjectsDisplay = styled.div`
-  width: 30%;
+  width: 80%;
+  max-width: 1000px;
   margin: 1.5% 1.5%;
   
   @media (max-width: ${TABLET_SIZE}${"px"}) {
-    width: 80%;
+    width: 90%;
+  }
+
+  @media (max-width: ${MOBILE_SIZE}${"px"}) {
+    margin: 8% 1.5%;
   }
 
 `;
@@ -141,6 +146,8 @@ const Projects = ({ theme, projects }) => {
                 description={project.description}
                 stack={project.stack}
                 img={project.img}
+                github={project.github || null}
+                link={project.link || null}
               ></ProjectCard>
             ))}
           {uniProjects &&
@@ -152,6 +159,8 @@ const Projects = ({ theme, projects }) => {
                 description={project.description}
                 stack={project.stack}
                 img={project.img}
+                github={project.github || null}
+                link={project.link || null}
               ></ProjectCard>
             ))}
         </ProjectsDisplay>

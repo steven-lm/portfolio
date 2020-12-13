@@ -17,7 +17,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 function App() {
 
   let data = require('./components/data/projects.json');
-  console.log(data);
+
   var Scroll   = require('react-scroll');
   var scroller = Scroll.scroller;
 
@@ -37,7 +37,10 @@ function App() {
       back.style.display = "flex";
     } else {
       let back = document.getElementsByClassName("showBack")[0];
-      back.style.display = "none";
+
+      if (back) {
+        back.style.display = "none";
+      }
     }
   };
 

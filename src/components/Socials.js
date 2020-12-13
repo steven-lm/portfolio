@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${props => props.align ? props.align : ""};
   height: 100px;
   color: ${props => props.dark ? "#D3D3D3" : "black"};
   font-weight: 500;
@@ -29,9 +30,9 @@ const Container = styled.div`
   }
 `;
 
-const Socials = ({theme, size}) => {
+const Socials = ({theme, size, align}) => {
   return(
-  <Container dark={theme === "dark"}>
+  <Container align={align} dark={theme === "dark"}>
     <a rel="noreferrer" target="_blank" href="https://github.com/steven-lm">
      <GitHubIcon fontSize={size}></GitHubIcon>
      </a>

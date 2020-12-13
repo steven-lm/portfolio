@@ -3,7 +3,6 @@ import DarkModeToggle from "react-dark-mode-toggle";
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import '../menu.css';
-
 const MOBILE_SIZE = "950";
 
 const MainContainer = styled.header`
@@ -231,6 +230,7 @@ const Header = ({theme, changeTheme}) => {
         </NavItem>
       </NavItems>
       <SwitchContainer dark={theme === "dark"}>
+        
         <DarkModeToggle
           onChange={() => {changeTheme()}}
           checked={theme === "dark"}
