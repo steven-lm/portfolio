@@ -1,22 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2181d2a7.chunk.css",
-    "main.js": "/portfolio/static/js/main.926123dd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.926123dd.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.77d24af7.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.77d24af7.js.map",
-    "static/js/2.66455f88.chunk.js": "/portfolio/static/js/2.66455f88.chunk.js",
-    "static/js/2.66455f88.chunk.js.map": "/portfolio/static/js/2.66455f88.chunk.js.map",
-    "static/js/3.76f1e877.chunk.js": "/portfolio/static/js/3.76f1e877.chunk.js",
-    "static/js/3.76f1e877.chunk.js.map": "/portfolio/static/js/3.76f1e877.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.116cbdf3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.116cbdf3.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.bff4abe0.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.bff4abe0.js.map",
+    "static/js/2.ead2bac6.chunk.js": "/portfolio/static/js/2.ead2bac6.chunk.js",
+    "static/js/2.ead2bac6.chunk.js.map": "/portfolio/static/js/2.ead2bac6.chunk.js.map",
+    "static/js/3.842a57fe.chunk.js": "/portfolio/static/js/3.842a57fe.chunk.js",
+    "static/js/3.842a57fe.chunk.js.map": "/portfolio/static/js/3.842a57fe.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.2181d2a7.chunk.css.map": "/portfolio/static/css/main.2181d2a7.chunk.css.map",
-    "static/js/2.66455f88.chunk.js.LICENSE.txt": "/portfolio/static/js/2.66455f88.chunk.js.LICENSE.txt",
-    "static/media/bigbrain play.JPG": "/portfolio/static/media/bigbrain play.9b04183f.JPG",
+    "static/js/2.ead2bac6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ead2bac6.chunk.js.LICENSE.txt",
     "static/media/bigbrain.JPG": "/portfolio/static/media/bigbrain.d6cbb8e9.JPG",
     "static/media/censor.jpg": "/portfolio/static/media/censor.6a2f58e7.jpg",
-    "static/media/dungeon.JPG": "/portfolio/static/media/dungeon.0601160e.JPG",
-    "static/media/genre-classifier.psd": "/portfolio/static/media/genre-classifier.d8cf4e12.psd",
     "static/media/genre-classifier.JPG": "/portfolio/static/media/genre-classifier.f287d001.JPG",
     "static/media/iot.JPG": "/portfolio/static/media/iot.f6313d69.JPG",
     "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
@@ -26,9 +23,9 @@
     "static/media/slack.JPG": "/portfolio/static/media/slack.0c25f746.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.77d24af7.js",
-    "static/js/2.66455f88.chunk.js",
+    "static/js/runtime-main.bff4abe0.js",
+    "static/js/2.ead2bac6.chunk.js",
     "static/css/main.2181d2a7.chunk.css",
-    "static/js/main.926123dd.chunk.js"
+    "static/js/main.116cbdf3.chunk.js"
   ]
 }
