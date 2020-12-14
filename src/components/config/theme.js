@@ -4,6 +4,7 @@ export const lightTheme = {
     darkerBackground: "#f0f0f0",
     header: "#ffeecb",
     footer: "#F3D4AB",
+    input: "#ffedd6",
 }
 
 export const darkTheme = {
@@ -12,4 +13,6 @@ export const darkTheme = {
     darkerBackground: "#111111",
     header: "#2f3249",
     footer: "#111428",
+    input: "#191D4C",
+    placeholder: "#D3D3D3"
 };

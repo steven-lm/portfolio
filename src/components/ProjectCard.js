@@ -59,6 +59,8 @@ const Container = styled.div`
     text-align: left;
     padding: 15px;
     position: relative;
+    display: flex;
+    align-items: center;
     z-index: 2;
     box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.54);
     background-color: ${(props) => (props.dark ? "#050505" : "white")};

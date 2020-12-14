@@ -65,23 +65,27 @@ const SkillsMain = styled.div`
       margin: 3% 0%;
       width: 80%;
     }
+
   }
 
   .language-container {
     height: 500px;
     width: 35%;
     margin: 1.5% 1.5%;
+    
 
     @media (max-width: ${TABLET_SIZE}${"px"}) {
       margin: 3% 0%;
       width: 80%;
     }
+
   }
 
   .main-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 35px;
+    width: 100%;
   }
 
   .tech {
@@ -107,6 +111,30 @@ const SkillsMain = styled.div`
   
     .language-container {
       width: 45%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+
+    .tech-container {
+      height: 390px;
+    }
+
+    .language-container {
+      height: 390px;
+    }
+  }
+
+  @media (max-width: 410px) {
+
+    .tech-container {
+      height: 400px;
+      width: 100%;
+    }
+
+    .language-container {
+      height: 400px;
+      width: 100%;
     }
   }
 

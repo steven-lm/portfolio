@@ -106,10 +106,6 @@ const Summary = styled.div`
   flex-direction: column;
   text-align: left;
 
-  @media (max-width: ${MOBILE_SIZE}${"px"}) {
-    width: 80%;
-  }
-
   .connect-text {
     margin-top: 30px;
   }
@@ -117,8 +113,13 @@ const Summary = styled.div`
   @media (max-width: ${TABLET_SIZE}${"px"}) {
     margin-bottom: 40px;
     width: 85%;
-    text-align: center;
+    text-align: left;
   }
+
+  @media (max-width: ${MOBILE_SIZE}${"px"}) {
+    width: 85%;
+  }
+
 `;
 
 const TimelineContainer = styled.div`

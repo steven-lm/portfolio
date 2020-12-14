@@ -37,6 +37,10 @@ const Container = styled.div`
     }
   }
 
+  @media (max-width: 500px) {
+    margin: 7px 4px;
+  }
+
   .name {
     font-size: 1.2rem;
     font-weight: bold;
@@ -48,8 +52,6 @@ const Container = styled.div`
 `;
 
 const SkillCard = ({ children, theme, name, color }) => {
-
-  console.log(theme);
   return(
     <ScrollAnimation
     className="project-anim"
