@@ -178,6 +178,25 @@ const Container = styled.div`
     font-weight: 500;
   }
 
+  @media (max-width: 500px) {
+    .submit-button {
+      width: 300px;
+    }
+
+    #message {
+      width: 300px;
+
+    }
+
+    #from_name {
+      width: 300px;
+    }
+
+    #email {
+      width: 300px;
+    }
+  }
+
 `;
 
 const Contact = ({ theme }) => {
@@ -231,7 +250,7 @@ const Contact = ({ theme }) => {
     } else {
       setIsValid(false);
     }
-    
+
   }, [formState])
 
   function sendEmail(e) {
@@ -242,6 +261,7 @@ const Contact = ({ theme }) => {
       setShowMissing(true);
       return;
     }
+
 
     emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target, REACT_APP_USER_ID)
       .then((result) => {
