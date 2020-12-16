@@ -6,8 +6,9 @@ import { AiFillHtml5 } from "react-icons/ai";
 import {DiPhotoshop, DiPostgresql, DiNodejs, DiProlog} from "react-icons/di";
 import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl} from "react-icons/si"
 
-const MOBILE_SIZE = "500";
+const MOBILE_SIZE = "410";
 const TABLET_SIZE = "1100";
+const LARGE_TABLET_SIZE = "1600";
 
 const Container = styled.div`
   display: flex;
@@ -104,7 +105,7 @@ const SkillsMain = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: ${LARGE_TABLET_SIZE}${"px"}) {
     .tech-container {
       width: 45%;
     }
@@ -114,7 +115,7 @@ const SkillsMain = styled.div`
     }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: ${TABLET_SIZE}${"px"}) {
 
     .tech-container {
       height: 390px;
@@ -125,7 +126,7 @@ const SkillsMain = styled.div`
     }
   }
 
-  @media (max-width: 410px) {
+  @media (max-width: ${MOBILE_SIZE}${"px"}) {
 
     .tech-container {
       height: 400px;

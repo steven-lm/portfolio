@@ -26,7 +26,7 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: ${TABLET_SIZE}${"px"}) {
     padding: 13px;
     height: 80px;
     width: 80px;
@@ -37,7 +37,7 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: ${MOBILE_SIZE}${"px"}) {
     margin: 7px 4px;
   }
 
@@ -45,7 +45,7 @@ const Container = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
 
-    @media (max-width: 1100px) {
+    @media (max-width: ${TABLET_SIZE}${"px"}) {
       font-size: 0.9rem;
     }
   }
