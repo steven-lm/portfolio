@@ -87,6 +87,7 @@ const SkillsMain = styled.div`
     font-weight: 500;
     margin-bottom: 35px;
     width: 100%;
+    color: ${(props) => (props.dark ? "#d3d3d3" : "black")};
   }
 
   .tech {
