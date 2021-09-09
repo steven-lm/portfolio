@@ -39,7 +39,7 @@
         {
             "name": "Big Brain",
             "label": "Frontend",
-            "description": "Collaborated in a team of 2 to develop a front end for a quiz game website",
+            "description": "Developed the front end for a quiz game website",
             "stack": ["Reactjs", "Javascript"],
             "img": "bigbrain.JPG"
         },

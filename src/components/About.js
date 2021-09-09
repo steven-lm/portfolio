@@ -14,6 +14,7 @@ import Typography from "@material-ui/core/Typography";
 import SchoolIcon from "@material-ui/icons/School";
 import ComputerIcon from "@material-ui/icons/Computer";
 import ScrollAnimation from "react-animate-on-scroll";
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -43,7 +44,7 @@ const Container = styled.div`
   display: flex;
   padding: 5% 2%;
   align-items: center;
-  height: 600px;
+  height: 900px;
   flex-direction: column;
   background-color: ${(props) => props.theme.lightTheme.background};
 
@@ -55,11 +56,11 @@ const Container = styled.div`
     `}
 
   @media (max-width: ${TABLET_SIZE}${"px"}) {
-    height: 850px;
+    height: 900px;
   }
 
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
-    height: 1000px;
+    height: 1200px;
   }
 `;
 
@@ -143,6 +144,9 @@ const TimelineContainer = styled.div`
 
   .timeline-content {
     text-align: left;
+    position: relative;
+    right: 200px;
+    width: 130%;
   }
 
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
@@ -178,7 +182,7 @@ const About = ({ theme }) => {
         >
             <div>
               Hello! I'm currently a full time student studying computer science
-              at UNSW. I'm always looking for a challenge and enjoy exploring
+              at UNSW and also a part-time software engineering intern. I'm always looking for a challenge and enjoy exploring
               new areas of work.
             </div>
             <div className="connect-text">Connect with me!</div>
@@ -193,7 +197,7 @@ const About = ({ theme }) => {
           animateOnce={true}
           duration={1}
         >
-          <div className="timeline-title">Education</div>
+          <div className="timeline-title">Experience</div>
           <div className="timeline-content">
             <Timeline align="left">
               <TimelineItem>
@@ -202,7 +206,7 @@ const About = ({ theme }) => {
                     variant="body2"
                     className={theme === "dark" ? classes.darkTypography : null}
                   >
-                    2019 - Present
+                    2021 - Present
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -219,9 +223,9 @@ const About = ({ theme }) => {
                     }
                   >
                     <Typography variant="h6" component="h1">
-                      B. Computer Science
+                      Junior Software Engineer
                     </Typography>
-                    <Typography>UNSW</Typography>
+                    <Typography>Ordermentum</Typography>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
@@ -231,12 +235,41 @@ const About = ({ theme }) => {
                     variant="body2"
                     className={theme === "dark" ? classes.darkTypography : null}
                   >
-                    2012 - 2018
+                    2019 - 2019
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="grey">
                     <SchoolIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper
+                    elevation={3}
+                    className={
+                      theme === "dark" ? classes.darkPaper : classes.paper
+                    }
+                  >
+                    <Typography variant="h6" component="h1">
+                      Tutor
+                    </Typography>
+                    <Typography>TOTC Tuition</Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography
+                    variant="body2"
+                    className={theme === "dark" ? classes.darkTypography : null}
+                  >
+                    2015 - 2017
+                  </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="grey">
+                    <CameraAltIcon />
                   </TimelineDot>
                 </TimelineSeparator>
                 <TimelineContent>
@@ -247,12 +280,13 @@ const About = ({ theme }) => {
                     }
                   >
                     <Typography variant="h6" component="h1">
-                      HSC
+                      Photo Editor
                     </Typography>
-                    <Typography>Canley Vale High School</Typography>
+                    <Typography>CAB Fast Photo</Typography>
                   </Paper>
                 </TimelineContent>
-              </TimelineItem>
+              </TimelineItem>              
+
             </Timeline>
           </div>
           </ScrollAnimation>

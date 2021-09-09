@@ -158,19 +158,20 @@ const Container = styled.div`
   .submit-button {
     margin-top: 10px;
     width: 350px;
-    height: 30px;
+    height: 35px;
     border-radius: 5px;
     border: none;
     font-family: inherit;
+    font-size: 1.2rem;
     outline: black;
-    color: ${(props) => (props.dark ? "black" : "black")};
-    background: ${(props) => (props.dark ? "#252b6b" : "#cfad80")};
+    color: ${(props) => (props.dark ? "white" : "#3d3d3d")};
+    background: ${(props) => (props.dark ? "#252b6b" : "#fff2e0")};
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .submit-button: hover {
-    background: ${(props) => (props.dark ? "#3e469c" : "#ab8e68")};
+    background: ${(props) => (props.dark ? "#3e469c" : "#ffe7c7")};
   }
 
   .form-message {

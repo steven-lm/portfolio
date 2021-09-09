@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard";
 import { FaReact, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import {DiPhotoshop, DiPostgresql, DiNodejs, DiProlog} from "react-icons/di";
-import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl} from "react-icons/si"
+import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus} from "react-icons/si"
 
 const MOBILE_SIZE = "410";
 const TABLET_SIZE = "1100";
@@ -196,8 +196,8 @@ const Skills = ({ theme, isVisible }) => {
               <SkillCard theme={theme} name="Javascript" color="#FFC732">
                 <SiJavascript></SiJavascript>
               </SkillCard>
-              <SkillCard theme={theme} name="C" color="#3848AA">
-                <SiC></SiC>
+              <SkillCard theme={theme} name="C++" color="#0281CD">
+                <SiCplusplus></SiCplusplus>
               </SkillCard>
               <SkillCard theme={theme} name="Java" color="#E51F24" >
                 <FaJava></FaJava>
@@ -209,6 +209,9 @@ const Skills = ({ theme, isVisible }) => {
               </SkillCard>
               <SkillCard theme={theme} name="Prolog" color="#E51B23">
                 <DiProlog></DiProlog>
+              </SkillCard>
+              <SkillCard theme={theme} name="C" color="#3848AA">
+                <SiC></SiC>
               </SkillCard>
             </div>
           </div>
