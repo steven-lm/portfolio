@@ -182,7 +182,7 @@ const About = ({ theme }) => {
         >
             <div>
               Hello! I'm currently a full time student studying computer science
-              at UNSW and also a part-time software engineering intern. I'm always looking for a challenge and enjoy exploring
+              at UNSW and also a part-time software engineer. I'm always looking for a challenge and enjoy exploring
               new areas of work.
             </div>
             <div className="connect-text">Connect with me!</div>
@@ -200,13 +200,43 @@ const About = ({ theme }) => {
           <div className="timeline-title">Experience</div>
           <div className="timeline-content">
             <Timeline align="left">
-              <TimelineItem>
+            <TimelineItem>
                 <TimelineOppositeContent>
                   <Typography
                     variant="body2"
                     className={theme === "dark" ? classes.darkTypography : null}
                   >
                     2021 - Present
+                  </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot variant="outlined" color="grey">
+                    <ComputerIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper
+                    elevation={3}
+                    className={
+                      theme === "dark" ? classes.darkPaper : classes.paper
+                    }
+                  >
+                    <Typography variant="h6" component="h1">
+                      Software Engineer
+                    </Typography>
+                    <Typography>PUSHAS</Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography
+                    variant="body2"
+                    className={theme === "dark" ? classes.darkTypography : null}
+                  >
+                    2021 - 2021
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
