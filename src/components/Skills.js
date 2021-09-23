@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard";
 import { FaReact, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import {DiPhotoshop, DiPostgresql, DiNodejs, DiProlog} from "react-icons/di";
-import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus} from "react-icons/si"
+import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus, SiNextDotJs, SiGraphql} from "react-icons/si"
 
 const MOBILE_SIZE = "410";
 const TABLET_SIZE = "1100";
@@ -182,6 +182,12 @@ const Skills = ({ theme, isVisible }) => {
             <div className="row1">
               <SkillCard theme={theme} name="Flask" color="black">
                 <SiFlask></SiFlask>
+              </SkillCard>
+              <SkillCard theme={theme} name="NextJS" color="black">
+                <SiNextDotJs></SiNextDotJs>
+              </SkillCard>
+              <SkillCard theme={theme} name="GraphQL" color="#DE33A6">
+                <SiGraphql></SiGraphql>
               </SkillCard>
             </div>
           </div>
