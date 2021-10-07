@@ -192,7 +192,6 @@ const Header = ({ theme, changeTheme }) => {
   }
 
   useEffect(() => {
-    console.log("loading header");
     let width = window.screen.width;
     if (width < MOBILE_SIZE) {
       setMobile(true);
