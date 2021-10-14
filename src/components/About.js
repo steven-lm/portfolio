@@ -2,19 +2,16 @@ import React, { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import Socials from "../components/Socials";
 import { makeStyles } from "@material-ui/core/styles";
-import Timeline from "@material-ui/lab/Timeline";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
-import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import SchoolIcon from "@material-ui/icons/School";
 import ComputerIcon from "@material-ui/icons/Computer";
 import ScrollAnimation from "react-animate-on-scroll";
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
+import TimelineComponent from "./Timeline";
+import CoderSvg from "../assets/Coder.svg"
+import ParticlesBackground from './ParticlesBackground'
+import Particles from 'react-particles-js';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,7 +41,7 @@ const Container = styled.div`
   display: flex;
   padding: 5% 2%;
   align-items: center;
-  height: 900px;
+  height: fit-content;
   flex-direction: column;
   background-color: ${(props) => props.theme.lightTheme.background};
 
@@ -56,11 +53,11 @@ const Container = styled.div`
     `}
 
   @media (max-width: ${TABLET_SIZE}${"px"}) {
-    height: 900px;
+    height: fit-content;
   }
 
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
-    height: 1200px;
+    height: fit-content;
   }
 `;
 
@@ -189,139 +186,15 @@ const About = ({ theme }) => {
             <Socials align="center" theme={theme}></Socials>
             </ScrollAnimation>
           </Summary>
-        <TimelineContainer dark={theme === "dark"}>
-        <ScrollAnimation
-          className="project-anim"
-          initiallyVisible={true}
-          animateIn="fadeInRight"
-          animateOnce={true}
-          duration={1}
-        >
-          <div className="timeline-title">Experience</div>
-          <div className="timeline-content">
-            <Timeline align="left">
-            <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography
-                    variant="body2"
-                    className={theme === "dark" ? classes.darkTypography : null}
-                  >
-                    2021 - Present
-                  </Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="grey">
-                    <ComputerIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper
-                    elevation={3}
-                    className={
-                      theme === "dark" ? classes.darkPaper : classes.paper
-                    }
-                  >
-                    <Typography variant="h6" component="h1">
-                      Software Engineer
-                    </Typography>
-                    <Typography>PUSHAS</Typography>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
 
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography
-                    variant="body2"
-                    className={theme === "dark" ? classes.darkTypography : null}
-                  >
-                    2021 - 2021
-                  </Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="grey">
-                    <ComputerIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper
-                    elevation={3}
-                    className={
-                      theme === "dark" ? classes.darkPaper : classes.paper
-                    }
-                  >
-                    <Typography variant="h6" component="h1">
-                      Junior Software Engineer
-                    </Typography>
-                    <Typography>Ordermentum</Typography>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography
-                    variant="body2"
-                    className={theme === "dark" ? classes.darkTypography : null}
-                  >
-                    2019 - 2019
-                  </Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="grey">
-                    <SchoolIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper
-                    elevation={3}
-                    className={
-                      theme === "dark" ? classes.darkPaper : classes.paper
-                    }
-                  >
-                    <Typography variant="h6" component="h1">
-                      Tutor
-                    </Typography>
-                    <Typography>TOTC Tuition</Typography>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography
-                    variant="body2"
-                    className={theme === "dark" ? classes.darkTypography : null}
-                  >
-                    2015 - 2017
-                  </Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="grey">
-                    <CameraAltIcon />
-                  </TimelineDot>
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper
-                    elevation={3}
-                    className={
-                      theme === "dark" ? classes.darkPaper : classes.paper
-                    }
-                  >
-                    <Typography variant="h6" component="h1">
-                      Photo Editor
-                    </Typography>
-                    <Typography>CAB Fast Photo</Typography>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>              
+          <img style={{maxWidth: '450px', width: '70vw'}} alt="me" src={CoderSvg}></img>
 
-            </Timeline>
-          </div>
-          </ScrollAnimation>
-        </TimelineContainer>
+
+          
+
       </AboutMain>
+
+      <TimelineComponent theme={theme}></TimelineComponent>
     </Container>
   );
 };

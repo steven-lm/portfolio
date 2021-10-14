@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import poly from "../assets/images/poly1.svg";
 import emailjs from 'emailjs-com';
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Outer = styled.div`
   width: 100%;
@@ -79,6 +80,7 @@ const Container = styled.div`
   bottom: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   align-items: center;
   height: 600px;
   background-color: ${(props) => props.theme.lightTheme.main};
@@ -263,6 +265,8 @@ const Contact = ({ theme }) => {
       return;
     }
 
+    console.log(e.target)
+
 
     emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target, REACT_APP_USER_ID)
       .then((result) => {
@@ -297,6 +301,13 @@ const Contact = ({ theme }) => {
       </Polygon>
       <Container dark={theme === "dark"}>
         <Title dark={theme === "dark"}>Get in touch!</Title>
+        <ScrollAnimation
+          className="project-anim"
+          initiallyVisible={true}
+          animateIn="fadeInUp"
+          animateOnce={true}
+          duration={1}
+        >
         <div className="form-container">
           <form onSubmit={sendEmail}>
             <input
@@ -330,6 +341,7 @@ const Contact = ({ theme }) => {
           <div className="form-message" style={{color: "red"}}> Please fill out all fields! </div>
           }
         </div>
+        </ScrollAnimation>
       </Container>
     </Outer>
   );

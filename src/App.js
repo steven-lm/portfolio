@@ -53,6 +53,8 @@ function App() {
 
   useEffect(() => {
     const userPref = localStorage.getItem("stevensprofile");
+
+    console.log("cherry is cute :)")
     if (userPref) {
       setTheme(userPref);
     }
