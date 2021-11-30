@@ -147,7 +147,7 @@ const TimelineComponent = ({ theme }) => {
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">PUSHAS</h4>
           <p>
-          Developed the sellers platform
+          Designed and developed an MVP for the Cashout system
           </p>
           <p className="tech-stack">
           Tech stack: Typescript, Nextjs, Apollo, Hasura Graphql, AWS, Postgresql, Docker

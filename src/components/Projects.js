@@ -78,7 +78,7 @@ const SwitchContainer = styled.div`
     background: transparent;
     padding: 20px 40px;
     cursor: pointer;
-    border-bottom: 1px solid ${(props) => (props.dark ? "#111111" : "black")};
+    border-radius: 10px;
   }
 
   .uni-projects {
@@ -86,14 +86,12 @@ const SwitchContainer = styled.div`
     background: transparent;
     padding: 20px 40px;
     cursor: pointer;
-    border-bottom: 1px solid ${(props) => (props.dark ? "#111111" : "black")};
+    border-radius: 10px;
   }
 
   .active {
     background: ${(props) =>
-      props.dark ? "rgb(17,17,17)" : "rgb(211, 211, 211)"};
-    border-bottom: 1px solid
-      ${(props) => (props.dark ? "rgb(17,17,17)" : "gray")};
+      props.dark ? "rgb(17,17,17)" : "rgb(220, 220, 220)"};
   }
 `;
 

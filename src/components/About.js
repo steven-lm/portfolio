@@ -179,7 +179,8 @@ const About = ({ theme }) => {
         >
             <div>
               Hello! I'm currently a full time student studying computer science
-              at UNSW and also a part-time software engineer. I'm always looking for a challenge and enjoy exploring
+              at UNSW. I primarily work with Frontend development with Typescript and React but 
+               I'm always looking for a challenge and enjoy exploring
               new areas of work.
             </div>
             <div className="connect-text">Connect with me!</div>
