@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import Fade from "react-reveal/Fade";
-import Slide from 'react-reveal/Slide';
+import styled from "styled-components";
 import "../menu.css";
 const MOBILE_SIZE = "950";
 

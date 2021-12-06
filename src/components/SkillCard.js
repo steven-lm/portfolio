@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const MOBILE_SIZE = "500";

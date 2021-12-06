@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react";
-import DarkModeToggle from "react-dark-mode-toggle";
-import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import Socials from "../components/Socials";
+import React from "react";
+import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
-import test from "../components/data/images/personal.JPG";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaunchIcon from '@material-ui/icons/Launch';
 

@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import DarkModeToggle from "react-dark-mode-toggle";
-import PropTypes from 'prop-types';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import Socials from '../components/Socials';
 
