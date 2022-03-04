@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.0a04cd12.chunk.css",
-    "main.js": "/static/js/main.78625742.chunk.js",
-    "main.js.map": "/static/js/main.78625742.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2cb27da4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2cb27da4.js.map",
+    "main.js": "/static/js/main.f293d140.chunk.js",
+    "main.js.map": "/static/js/main.f293d140.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ff24ee31.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ff24ee31.js.map",
     "static/css/2.2aa38b9c.chunk.css": "/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.f72534d9.chunk.js": "/static/js/2.f72534d9.chunk.js",
-    "static/js/2.f72534d9.chunk.js.map": "/static/js/2.f72534d9.chunk.js.map",
-    "static/js/3.4ff8fc7b.chunk.js": "/static/js/3.4ff8fc7b.chunk.js",
-    "static/js/3.4ff8fc7b.chunk.js.map": "/static/js/3.4ff8fc7b.chunk.js.map",
+    "static/js/2.85262274.chunk.js": "/static/js/2.85262274.chunk.js",
+    "static/js/2.85262274.chunk.js.map": "/static/js/2.85262274.chunk.js.map",
+    "static/js/3.82320065.chunk.js": "/static/js/3.82320065.chunk.js",
+    "static/js/3.82320065.chunk.js.map": "/static/js/3.82320065.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2aa38b9c.chunk.css.map": "/static/css/2.2aa38b9c.chunk.css.map",
     "static/css/main.0a04cd12.chunk.css.map": "/static/css/main.0a04cd12.chunk.css.map",
-    "static/js/2.f72534d9.chunk.js.LICENSE.txt": "/static/js/2.f72534d9.chunk.js.LICENSE.txt",
+    "static/js/2.85262274.chunk.js.LICENSE.txt": "/static/js/2.85262274.chunk.js.LICENSE.txt",
     "static/media/Coder.89358583.svg": "/static/media/Coder.89358583.svg",
     "static/media/bigbrain.JPG": "/static/media/bigbrain.d6cbb8e9.JPG",
     "static/media/censor.jpg": "/static/media/censor.6a2f58e7.jpg",
     "static/media/genre-classifier.JPG": "/static/media/genre-classifier.f287d001.JPG",
     "static/media/iot.JPG": "/static/media/iot.f6313d69.JPG",
+    "static/media/jumptorecipe.png": "/static/media/jumptorecipe.be0ddc35.png",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/personal.JPG": "/static/media/personal.5aba5acf.JPG",
     "static/media/poly1.00538794.svg": "/static/media/poly1.00538794.svg",
@@ -26,10 +27,10 @@
     "static/media/slack.JPG": "/static/media/slack.0c25f746.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cb27da4.js",
+    "static/js/runtime-main.ff24ee31.js",
     "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.f72534d9.chunk.js",
+    "static/js/2.85262274.chunk.js",
     "static/css/main.0a04cd12.chunk.css",
-    "static/js/main.78625742.chunk.js"
+    "static/js/main.f293d140.chunk.js"
   ]
 }
