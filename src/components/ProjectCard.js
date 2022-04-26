@@ -196,7 +196,7 @@ const ProjectCard = ({ theme, name, label, description, stack, img, github, link
             }
             {
               link &&
-              <a href={github} className="open-button" rel="noreferrer" target="_blank">
+              <a href={link} className="open-button" rel="noreferrer" target="_blank">
                 <LaunchIcon fontSize="medium"></LaunchIcon>
               </a>
             }
@@ -207,6 +207,9 @@ const ProjectCard = ({ theme, name, label, description, stack, img, github, link
           <img
             src={require(`../components/data/images/${img}`).default}
             alt="project thumbnail"
+            style={{
+              objectFit: "cover",
+            }}
           ></img>
         </div>
       </Container>

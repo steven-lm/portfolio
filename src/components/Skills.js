@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard";
 import { FaReact, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import {DiPhotoshop, DiPostgresql, DiNodejs, DiProlog} from "react-icons/di";
-import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus, SiNextDotJs, SiGraphql} from "react-icons/si"
+import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus, SiNextDotJs, SiGraphql, SiRuby, SiRails} from "react-icons/si"
 
 const MOBILE_SIZE = "410";
 const TABLET_SIZE = "1100";
@@ -175,19 +175,19 @@ const Skills = ({ theme, isVisible }) => {
               <SkillCard theme={theme} name="Keras" color="#D10000">
                 <SiKeras></SiKeras>
               </SkillCard>
-              <SkillCard theme={theme} name="Photoshop" color="#2EA3F7" >
-                <DiPhotoshop></DiPhotoshop>
-              </SkillCard>
-            </div>
-            <div className="row1">
               <SkillCard theme={theme} name="Flask" color="black">
                 <SiFlask></SiFlask>
               </SkillCard>
+            </div>
+            <div className="row1">
               <SkillCard theme={theme} name="NextJS" color="black">
                 <SiNextDotJs></SiNextDotJs>
               </SkillCard>
               <SkillCard theme={theme} name="GraphQL" color="#DE33A6">
                 <SiGraphql></SiGraphql>
+              </SkillCard>
+              <SkillCard theme={theme} name="Rails" color="#AF1401">
+                <SiRails />
               </SkillCard>
             </div>
           </div>
@@ -218,6 +218,9 @@ const Skills = ({ theme, isVisible }) => {
               </SkillCard>
               <SkillCard theme={theme} name="C" color="#3848AA">
                 <SiC></SiC>
+              </SkillCard>
+              <SkillCard theme={theme} name="Ruby" color="#AF1401">
+                <SiRuby />
               </SkillCard>
             </div>
           </div>

@@ -1,6 +1,15 @@
 {
     "myProjects": [
         {
+            "name": "Jump to Recipe",
+            "label": "Chrome Extension",
+            "description": "A Chrome extension extracts only the recipe from any website or blog page. Currently has 1,000+ weekly users",
+            "stack": ["HTML/CSS", "Javascript"],
+            "img": "jumptorecipe.png",
+            "github": "https://github.com/steven-lm/Jump-To-Recipe",
+            "link": "https://chrome.google.com/webstore/detail/jump-to-recipe/gmkblbmghnolinkhfmkidocbojcfiejm?hl=en-GB&authuser=0"
+        },
+        {
             "name": "Personal website",
             "label": "Frontend",
             "description": "The site you're on right now!",

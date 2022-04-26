@@ -178,9 +178,9 @@ const About = ({ theme }) => {
           duration={1}
         >
             <div>
-              Hello! I'm currently a full time student studying computer science
-              at UNSW. I primarily work with Frontend development with Typescript and React but 
-               I'm always looking for a challenge and enjoy exploring
+              Hello! I'm a Software Engineer/CS Student
+              at UNSW. I primarily work with Frontend development using Typescript and React but 
+              I'm always looking for a challenge and enjoy exploring
               new areas of work.
             </div>
             <div className="connect-text">Connect with me!</div>
@@ -189,10 +189,6 @@ const About = ({ theme }) => {
           </Summary>
 
           <img style={{maxWidth: '450px', width: '70vw'}} alt="me" src={CoderSvg}></img>
-
-
-          
-
       </AboutMain>
 
       <TimelineComponent theme={theme}></TimelineComponent>

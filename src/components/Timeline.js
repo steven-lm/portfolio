@@ -125,18 +125,35 @@ const TimelineComponent = ({ theme }) => {
     <TimelineContainer dark={theme === "dark"}>
       <div className="timeline-title">Experience</div>
       <VerticalTimeline>
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: contentBackground, borderTop: "5px solid #006FCF" }}
+          contentArrowStyle={{ borderRight: "7px solid  #F0F0F0" }}
+          date="Mar 2022 - present"
+          iconStyle={{ background: "#006FCF", color: "#fff"}}
+          icon={<ComputerIcon style={{fill: 'white'}} />}
+        >
+          <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+          <h4 className="vertical-timeline-element-subtitle">RangeMe</h4>
+          <p>
+          Primarily working on the Ordering segment which enables Buyers to purchase directly from Suppliers on the RangeMe platform.
+          </p>
+          <p className="tech-stack">
+          Tech stack: JavaScript, React, Redux, RxJS, Ruby, Rails, AWS, Postgresql, Docker
+          </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: contentBackground, borderTop: "5px solid black" }}
           contentArrowStyle={{ borderRight: "7px solid  #F0F0F0" }}
-          date="Sep 2021 - present"
+          date="Nov 2021 - Mar 2022"
           iconStyle={{ background: "black", color: "#fff"}}
           icon={<ComputerIcon style={{fill: 'white'}} />}
         >
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">PUSHAS</h4>
           <p>
-          Designed and developed an MVP for the Cashout system
+          Architectured and developed a new platform for sellers/employees featuring Consignments and Cashouts.
           </p>
           <p className="tech-stack">
           Tech stack: Typescript, Nextjs, Apollo, Hasura Graphql, AWS, Postgresql, Docker
@@ -145,7 +162,7 @@ const TimelineComponent = ({ theme }) => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: contentBackground, borderTop: "5px solid #d64700"  }}
-          date="Jan 2021 - Sep 2021"
+          date="Jan 2021 - Nov 2021"
           iconStyle={{ background: "#d64700", color: "#fff" }}
           icon={<ComputerIcon style={{fill: 'white'}} />}
         >
@@ -162,21 +179,8 @@ const TimelineComponent = ({ theme }) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: contentBackground, borderTop: "5px solid #47A7CD" }}
-          date="Jan 2019 - May 2021"
-          iconStyle={{ background: "#47A7CD", color: "#fff" }}
-          icon={<SchoolIcon style={{fill: 'white'}} />}
-        >
-          <h3 className="vertical-timeline-element-title">Tutor</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            TOTC Tuition
-          </h4>
-          <p> Planned lessons and prepared work for students (Math & English) </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
           contentStyle={{ background: contentBackground, borderTop: "5px solid #836953" }}
-          date="Dec 2015 - Mar 2017"
+          date="Jun 2015 - Aug 2017"
           iconStyle={{ background: "#836953", color: "#fff" }}
           icon={<CameraAltIcon style={{fill: 'white'}} />}
         >
