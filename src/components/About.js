@@ -178,10 +178,7 @@ const About = ({ theme }) => {
           duration={1}
         >
             <div>
-              Hello! I'm a Software Engineer/CS Student
-              at UNSW. I primarily work with Frontend development using Typescript and React but 
-              I'm always looking for a challenge and enjoy exploring
-              new areas of work.
+              Hello! I'm a Software Engineer based in Sydney with experience across B2B and B2C tech companies. I'm currently interested in developing Web Applications and Cybersecurity but I'm always looking for new tech to work with :)
             </div>
             <div className="connect-text">Connect with me!</div>
             <Socials align="center" theme={theme}></Socials>
