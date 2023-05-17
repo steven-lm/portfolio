@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard";
 import { FaReact, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import {DiPhotoshop, DiPostgresql, DiNodejs, DiProlog} from "react-icons/di";
-import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiCplusplus, SiNextDotJs, SiGraphql, SiRuby, SiRails} from "react-icons/si"
+import {SiKeras, SiFlask, SiMicrosoftsqlserver,SiJavascript, SiC, SiPerl, SiTypescript, SiNextDotJs, SiGraphql, SiRuby, SiRails, SiRedux} from "react-icons/si"
 
 const MOBILE_SIZE = "410";
 const TABLET_SIZE = "1100";
@@ -149,7 +149,7 @@ const Skills = ({ theme, isVisible }) => {
       <Title className={isVisible ? "slide-in" : null}>Skills</Title>
       <SkillsMain dark={theme === "dark"}>
         <div className="tech-container">
-          <div className="main-title">Tech I've worked with</div>
+          <div className="main-title">Technologies I use</div>
           <div className="tech">
             <div className="row1">
               <SkillCard theme={theme} name="React" color="#61DBFB">
@@ -169,17 +169,6 @@ const Skills = ({ theme, isVisible }) => {
             <SkillCard theme={theme} name="PSQL" color="#336791" >
                 <DiPostgresql></DiPostgresql>
               </SkillCard>
-              <SkillCard theme={theme} name="SQL" color="#EEA61C">
-                <SiMicrosoftsqlserver></SiMicrosoftsqlserver>
-              </SkillCard>
-              <SkillCard theme={theme} name="Keras" color="#D10000">
-                <SiKeras></SiKeras>
-              </SkillCard>
-              <SkillCard theme={theme} name="Flask" color="black">
-                <SiFlask></SiFlask>
-              </SkillCard>
-            </div>
-            <div className="row1">
               <SkillCard theme={theme} name="NextJS" color="black">
                 <SiNextDotJs></SiNextDotJs>
               </SkillCard>
@@ -190,36 +179,32 @@ const Skills = ({ theme, isVisible }) => {
                 <SiRails />
               </SkillCard>
             </div>
+            <div className="row1">
+            <SkillCard theme={theme} name="Redux" color="#7248B6">
+                <SiRedux />
+              </SkillCard>
+            </div>
           </div>
         </div>
         <div className="language-container">
-          <div className="main-title"> Languages I've used</div>
+          <div className="main-title"> Languages I work with</div>
           <div className="languages">
           <div className="row1">
-              <SkillCard theme={theme} name="Python" color="#3470A2">
-                <FaPython></FaPython>
-              </SkillCard>
               <SkillCard theme={theme} name="Javascript" color="#FFC732">
                 <SiJavascript></SiJavascript>
               </SkillCard>
-              <SkillCard theme={theme} name="C++" color="#0281CD">
-                <SiCplusplus></SiCplusplus>
+              <SkillCard theme={theme} name="Typescript" color="#2F74C0">
+                <SiTypescript />
+              </SkillCard>
+              <SkillCard theme={theme} name="Python" color="#3470A2">
+                <FaPython></FaPython>
               </SkillCard>
               <SkillCard theme={theme} name="Java" color="#E51F24" >
                 <FaJava></FaJava>
               </SkillCard>
             </div>
             <div className="row1">
-              <SkillCard theme={theme} name="Perl" color="#4E5D86">
-                <SiPerl></SiPerl>
-              </SkillCard>
-              <SkillCard theme={theme} name="Prolog" color="#E51B23">
-                <DiProlog></DiProlog>
-              </SkillCard>
-              <SkillCard theme={theme} name="C" color="#3848AA">
-                <SiC></SiC>
-              </SkillCard>
-              <SkillCard theme={theme} name="Ruby" color="#AF1401">
+            <SkillCard theme={theme} name="Ruby" color="#AF1401">
                 <SiRuby />
               </SkillCard>
             </div>

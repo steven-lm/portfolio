@@ -136,7 +136,7 @@ const TimelineComponent = ({ theme }) => {
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">RangeMe</h4>
           <p>
-          Primarily working on the Ordering segment which enables Buyers to purchase directly from Suppliers on the RangeMe platform.
+          Primarily working on the Ordering system which enables Buyers to purchase directly from Suppliers on the RangeMe platform.
           </p>
           <p className="tech-stack">
           Tech stack: JavaScript, React, Redux, RxJS, Ruby, Rails, AWS, Postgresql, Docker
@@ -171,7 +171,7 @@ const TimelineComponent = ({ theme }) => {
             Ordermentum
           </h4>
           <p>
-          Developed experiments/scripts for Growth team. Worked on Frontend features with Dev team.
+          Developed experiments/scripts for Growth team. Worked on Frontend features on the app.
           </p>
           <p className="tech-stack">
           Tech stack: Typescript, React, Python, Nodejs, AWS, Postgresql, Docker

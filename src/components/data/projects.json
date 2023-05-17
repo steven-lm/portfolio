@@ -3,7 +3,7 @@
         {
             "name": "Jump to Recipe",
             "label": "Chrome Extension",
-            "description": "A Chrome extension extracts only the recipe from any website or blog page. Currently has 1,000+ weekly users",
+            "description": "A Chrome extension extracts only the recipe from any website or blog page. Currently has 3,000+ weekly users",
             "stack": ["HTML/CSS", "Javascript"],
             "img": "jumptorecipe.png",
             "github": "https://github.com/steven-lm/Jump-To-Recipe",
