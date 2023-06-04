@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/MailOutline';
-import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Container = styled.div`
   display: flex;
@@ -40,9 +39,6 @@ const Socials = ({theme, size, align}) => {
      </a>
      <a rel="noreferrer"target="_blank" href="mailto:stevenlamfn@gmail.com">
       <MailIcon fontSize={size}></MailIcon>
-     </a>
-     <a rel="noreferrer" target="_blank" href="https://www.instagram.com/s.tvn_/?hl=en">
-      <InstagramIcon fontSize={size}></InstagramIcon>
      </a>
   </Container>
   )

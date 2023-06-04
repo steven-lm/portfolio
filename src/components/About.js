@@ -178,7 +178,7 @@ const About = ({ theme }) => {
           duration={1}
         >
             <div>
-              Hello! I am a Software Engineer based in Sydney. I studied Computer Science at the University of New South Wales (UNSW) and have experience across B2B and B2C tech companies.
+              Hello! I'm a Software Engineer based in Sydney. I studied Computer Science at the University of New South Wales (UNSW) and have experience across B2B and B2C tech companies.
             </div>
             <div className="connect-text">Connect with me!</div>
             <Socials align="center" theme={theme}></Socials>

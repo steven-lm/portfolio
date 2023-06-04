@@ -4,6 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import SchoolIcon from "@material-ui/icons/School";
 import ComputerIcon from "@material-ui/icons/Computer";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
+import CanvaLogo from '../assets/logos/CanvaLogo.svg'
+import RangeMeLogo from '../assets/logos/RangeMeLogo.svg'
+import OrdermentumLogo from '../assets/logos/OrdermentumLogo.svg'
+import PushasLogo from '../assets/logos/PushasLogo.svg'
 
 import {
   VerticalTimeline,
@@ -79,6 +83,81 @@ const TimelineContainer = styled.div`
     width: 130%;
   }
 
+  #canva span:first-child  {
+    background: linear-gradient(141.1989deg, #01C3CC 0%, #4569E0 51%, #7428EF 99.8%, #7428EF 100%);
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  #canva img {
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+  }
+
+  #rangeme span:first-child {
+    background: white;
+    border: 1px solid #c9c9c9;
+    color: #fff;
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  #rangeme img {
+    height: 7vw;
+    width: 7vw;
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  #pushas span:first-child {
+    background: black;
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  #pushas img {
+    height: 8.5vw;
+    width: 8.5vw;
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  #ordermentum span:first-child {
+    background: white;
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  
+  #ordermentum img {
+    height: 10vw;
+    width: 10vw;
+    max-height: 60px;
+    max-width: 60px;
+  }
+
   @media (max-width: ${MOBILE_SIZE}${"px"}) {
     width: 100%;
 
@@ -127,16 +206,35 @@ const TimelineComponent = ({ theme }) => {
       <VerticalTimeline>
       <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          id="canva"
+          contentStyle={{ background: contentBackground, borderTop: "5px solid #6544DE" }}
+          contentArrowStyle={{ borderRight: "7px solid  #F0F0F0" }}
+          date="June 2023 - present"
+          // iconStyle={{ background: "linear-gradient(141.1989deg, #01C3CC 0%, #4569E0 51%, #7428EF 99.8%, #7428EF 100%)", color: "#fff", height: '60px', width: '60px'}}
+          icon={<img src={CanvaLogo} alt='Canva Logo'/>}
+        >
+          <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+          <h4 className="vertical-timeline-element-subtitle">Canva</h4>
+          <p>
+          User Product
+          </p>
+          {/* <p className="tech-stack">
+          Tech stack: TypeScript, React
+          </p> */}
+        </VerticalTimelineElement>
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          id="rangeme"
           contentStyle={{ background: contentBackground, borderTop: "5px solid #006FCF" }}
           contentArrowStyle={{ borderRight: "7px solid  #F0F0F0" }}
-          date="Mar 2022 - present"
-          iconStyle={{ background: "#006FCF", color: "#fff"}}
-          icon={<ComputerIcon style={{fill: 'white'}} />}
+          date="Mar 2022 - Mar 2023"
+          // iconStyle={{ background: "white", border: '1px solid #c9c9c9', color: "#fff", height: '60px', width: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+          icon={<img src={RangeMeLogo} alt='RangeMe Logo'/>}
         >
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">RangeMe</h4>
           <p>
-          Primarily working on the Ordering system which enables Buyers to purchase directly from Suppliers on the RangeMe platform.
+          Primarily worked on the Ordering system which enables Buyers to purchase directly from Suppliers on the RangeMe platform.
           </p>
           <p className="tech-stack">
           Tech stack: JavaScript, React, Redux, RxJS, Ruby, Rails, AWS, Postgresql, Docker
@@ -144,13 +242,14 @@ const TimelineComponent = ({ theme }) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          id="pushas"
           contentStyle={{ background: contentBackground, borderTop: "5px solid black" }}
           contentArrowStyle={{ borderRight: "7px solid  #F0F0F0" }}
           date="Nov 2021 - Mar 2022"
-          iconStyle={{ background: "black", color: "#fff"}}
-          icon={<ComputerIcon style={{fill: 'white'}} />}
+          // iconStyle={{ background: "black", color: "#fff", height: '60px', width: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+          icon={<img src={PushasLogo} alt='Pushas Logo'/>}
         >
-          <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+          <h3 className="vertical-timeline-element-title">Software Engineer - Contract</h3>
           <h4 className="vertical-timeline-element-subtitle">PUSHAS</h4>
           <p>
           Architectured and developed a new platform for sellers/employees featuring Consignments and Cashouts.
@@ -161,10 +260,11 @@ const TimelineComponent = ({ theme }) => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          id="ordermentum"
           contentStyle={{ background: contentBackground, borderTop: "5px solid #d64700"  }}
           date="Jan 2021 - Nov 2021"
-          iconStyle={{ background: "#d64700", color: "#fff" }}
-          icon={<ComputerIcon style={{fill: 'white'}} />}
+          // iconStyle={{ background: "white", color: "#fff", height: '60px', width: '60px'}}
+          icon={<img src={OrdermentumLogo} alt='Ordermentum Logo'/>}
         >
           <h3 className="vertical-timeline-element-title">Junior Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">
