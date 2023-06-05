@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.0a04cd12.chunk.css",
-    "main.js": "/static/js/main.d7b4acd0.chunk.js",
-    "main.js.map": "/static/js/main.d7b4acd0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ff24ee31.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ff24ee31.js.map",
+    "main.js": "/static/js/main.b30cb03d.chunk.js",
+    "main.js.map": "/static/js/main.b30cb03d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2cb27da4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2cb27da4.js.map",
     "static/css/2.2aa38b9c.chunk.css": "/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.000f838c.chunk.js": "/static/js/2.000f838c.chunk.js",
-    "static/js/2.000f838c.chunk.js.map": "/static/js/2.000f838c.chunk.js.map",
-    "static/js/3.82320065.chunk.js": "/static/js/3.82320065.chunk.js",
-    "static/js/3.82320065.chunk.js.map": "/static/js/3.82320065.chunk.js.map",
+    "static/js/2.488de7df.chunk.js": "/static/js/2.488de7df.chunk.js",
+    "static/js/2.488de7df.chunk.js.map": "/static/js/2.488de7df.chunk.js.map",
+    "static/js/3.4ff8fc7b.chunk.js": "/static/js/3.4ff8fc7b.chunk.js",
+    "static/js/3.4ff8fc7b.chunk.js.map": "/static/js/3.4ff8fc7b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2aa38b9c.chunk.css.map": "/static/css/2.2aa38b9c.chunk.css.map",
     "static/css/main.0a04cd12.chunk.css.map": "/static/css/main.0a04cd12.chunk.css.map",
-    "static/js/2.000f838c.chunk.js.LICENSE.txt": "/static/js/2.000f838c.chunk.js.LICENSE.txt",
+    "static/js/2.488de7df.chunk.js.LICENSE.txt": "/static/js/2.488de7df.chunk.js.LICENSE.txt",
+    "static/media/CanvaLogo.ecb295a6.svg": "/static/media/CanvaLogo.ecb295a6.svg",
     "static/media/Coder.89358583.svg": "/static/media/Coder.89358583.svg",
+    "static/media/OrdermentumLogo.4e3a8ab2.svg": "/static/media/OrdermentumLogo.4e3a8ab2.svg",
+    "static/media/PushasLogo.083c8e7b.svg": "/static/media/PushasLogo.083c8e7b.svg",
+    "static/media/RangeMeLogo.19b3eb74.svg": "/static/media/RangeMeLogo.19b3eb74.svg",
     "static/media/bigbrain.JPG": "/static/media/bigbrain.d6cbb8e9.JPG",
     "static/media/censor.jpg": "/static/media/censor.6a2f58e7.jpg",
     "static/media/genre-classifier.JPG": "/static/media/genre-classifier.f287d001.JPG",
@@ -27,10 +31,10 @@
     "static/media/slack.JPG": "/static/media/slack.0c25f746.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff24ee31.js",
+    "static/js/runtime-main.2cb27da4.js",
     "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.000f838c.chunk.js",
+    "static/js/2.488de7df.chunk.js",
     "static/css/main.0a04cd12.chunk.css",
-    "static/js/main.d7b4acd0.chunk.js"
+    "static/js/main.b30cb03d.chunk.js"
   ]
 }
